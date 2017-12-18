@@ -18,9 +18,9 @@
 
     <script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/modernizr.custom.js"></script>
-	
 
-	
+
+
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
 
@@ -32,7 +32,7 @@
   </head>
 
   <body data-spy="scroll" data-offset="0" data-target="#theMenu">
-		
+
 	<!-- Menu -->
 	<nav class="menu" id="theMenu">
 		<div class="menu-wrap">
@@ -47,16 +47,25 @@
 			<a href="#"><i class="icon-dribbble"></i></a>
 			<a href="#"><i class="icon-envelope"></i></a>
 		</div>
-		
+
 		<!-- Menu button -->
 		<div id="menuToggle"><i class="icon-reorder"></i></div>
 	</nav>
 
+  <script>
+    $("nav").find("a").click(function(e) {
+        e.preventDefault();
+        var section = $(this).attr("href");
+        $("html, body").animate({
+          scrollTop: $(section).offset().top
+        });
+    });
+  </script>
 
-	
+
 	<!-- ========== HEADER SECTION ========== -->
 	<section id="home" name="home"></section>
-	<div id="headerwrap">
+	<div id="home">
 		<div class="container">
 			<div class="logo">
 				<img src="assets/img/logo.png">
@@ -73,17 +82,17 @@
 			</div>
 		</div><!-- /container -->
 	</div><!-- /headerwrap -->
-	
-	
-	
+
+
+
 	<!-- ========== ABOUT SECTION ========== -->
 	<section id="about" name="about"></section>
-	<div id="f">
+	<div id="about">
 		<div class="container">
 			<div class="row">
 				<h3>ABOUT ME</h3>
 				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
-				
+
 				<!-- INTRO INFORMATIO-->
 				<div class="col-lg-6 col-lg-offset-3">
 					<p>A full time theme crafter based in Madrid, Spain. I love designing beautiful, clean and user-friendly interfaces for websites.</p>
@@ -91,20 +100,20 @@
 					<p>Sometimes I blog about design and web trends. Also I share links and my thoughts on <a href="http://twitter.com/BlackTie_co">Twitter</a>. Need a free handsome bootstrap theme? <a href="http://blacktie.co">Done!</a></p>
 					<p>I'm available for freelance jobs. Contact me now.</p>
 					<p><button type="button" class="btn btn-warning">I HAVE A FREELANCE JOB</button></p>
-				</div>								
+				</div>
 			</div>
 		</div><!-- /container -->
 	</div><!-- /f -->
-	
 
-	<!-- ========== CAROUSEL SECTION ========== -->	
+
+	<!-- ========== CAROUSEL SECTION ========== -->
 	<section id="portfolio" name="portfolio"></section>
-	<div id="f">
+	<div id="portfolio">
 		<div class="container">
 			<div class="row centered">
 				<h3>SOME PROJECTS</h3>
 				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
-				
+
 				<div class="col-lg-6 col-lg-offset-3">
 					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 						<!-- Wrapper for slides -->
@@ -134,12 +143,12 @@
 
 	<!-- ========== CONTACT SECTION ========== -->
 	<section id="contact" name="contact"></section>
-	<div id="f">
+	<div id="contact">
 		<div class="container">
 			<div class="row">
 				<h3>CONTACT ME</h3>
 				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
-				
+
 				<div class="col-lg-6 col-lg-offset-3">
 					<p>Some Avenue, 987<br/>Madrid, Spain<br/>+34 8984-4343</p>
 					<p>iam@awesomemail.com</p>
@@ -149,7 +158,7 @@
 		</div>
 	</div>
 
-	
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
