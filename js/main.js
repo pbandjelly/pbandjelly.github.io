@@ -17,6 +17,7 @@ function main() {
         }
       });
 
+	
     // Show Menu on Book
     $(window).bind('scroll', function() {
         var navHeight = $(window).height() - 500;
@@ -31,8 +32,7 @@ function main() {
         target: '.navbar-default',
         offset: 80
     });
-	
-	
+
 	// Hide nav on click
   $(".navbar-nav li a").click(function (event) {
     // check if window is small enough so dropdown is created
@@ -41,7 +41,7 @@ function main() {
       $(".navbar-collapse").collapse('hide');
     }
   });
-
+	
   	// Portfolio isotope filter
     $(window).load(function() {
         var $container = $('.portfolio-items');
@@ -70,10 +70,13 @@ function main() {
 
     });
 	
-  	// Pretty Photo
-	$("a[rel^='prettyPhoto']").prettyPhoto({
-		social_tools: false
-	});	
+
+    // Nivo Lightbox 
+    $('.portfolio-item a').nivoLightbox({
+            effect: 'slideDown',  
+            keyboardNav: true,                            
+        });
+ 
 
 }());
 
