@@ -31,25 +31,13 @@ p.about {
 	font-size: 18px;
 	line-height: 24px;
 }
-
-
-
 a {
-	background: #414a52;
-	color: #ffffff;
-	padding: 12px 24px;
-	text-transform: uppercase;
+	color: #f6f6f6;
 }
-a:focus {
-	background: #ffffff;
-	color: #414a52;
+a:hover, a:focus {
+	text-decoration: none;
+	color: #343b42;
 }
-a:hover {
-	background: #ffffff;
-	color: #414a52;
-}
-
-
 ul, ol {
 	list-style: none;
 }
