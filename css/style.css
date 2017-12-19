@@ -337,7 +337,7 @@ ol.type li a:hover {
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#414a52', GradientType=0 ); /* IE6-9 */
 }
 
-#contact h2 {
+#contact h2, p {
 	color: #ffffff;
 }
 
