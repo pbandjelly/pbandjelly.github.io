@@ -18,9 +18,9 @@ a {
 }
 
 a:hover, a:active, a:focus {
-  color: #2dca98;
   outline: none;
   text-decoration: none;
+  color: #666666;
 }
 
 p {
