@@ -467,7 +467,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #999;
 }
 
-/* About Us Section
+/* About Section
 --------------------------------*/
 #about {
   background: #fff;
@@ -544,7 +544,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Facts Section
 --------------------------------*/
-#facts {
+/*#facts {
   background: #f7f7f7;
   padding: 80px 0 60px 0;
 }
@@ -552,7 +552,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #facts .counters span {
   font-size: 48px;
   display: block;
-  /*color: #2dc997;*/
+  color: #2dc997;
 }
 
 #facts .counters p {
@@ -560,6 +560,77 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0 0 20px 0;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
+}*/
+
+/* Services Section
+--------------------------------*/
+#experiences {
+  background: #fff;
+  background-size: cover;
+  padding: 80px 0 60px 0;
+}
+
+#experiences .box {
+  padding: 50px 20px;
+  margin-bottom: 50px;
+  font-size: 10px;
+  border: 1px solid #e6e6e6;
+  position: relative;
+  background: #fafafa;
+}
+
+#experiences .icon {
+  position: absolute;
+  top: -36px;
+  left: calc(50% - 36px);
+  transition: 0.2s;
+  border-radius: 50%;
+  display: inline-block;
+  border: 6px solid #fff;
+}
+
+#experiences .icon a {
+  display: inline-block;
+  background: #666666;
+  border: 2px solid #666666;
+  padding: 16px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+#experiences .icon i {
+  color: #fff;
+  font-size: 24px;
+}
+
+#experiences .box:hover .icon i {
+  color: #666666;
+}
+
+#experiences .box:hover .icon a {
+  color: #666666;
+  background: #fff;
+}
+
+#experiences .title {
+  color: #111;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+#experiences .title2 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+#experiences .description {
+  font-size: 12px;
+  line-height: 24px;
 }
 
 /* Portfolio Section
